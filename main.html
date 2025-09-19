@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Diário de Bordo</title>
 </head>
+
 <body>
     <header>
         <h1>Diário de Bordo</h1>
@@ -17,7 +19,7 @@
     </header>
     <main>
         <section>
-            <button>Adicionar</button>
+            <button id="openModal">Adicionar</button>
         </section>
         <section>
             <div>
@@ -37,7 +39,12 @@
                 </table>
             </div>
         </section>
+        <section id="modal">
+            <div id="myModal" class="modal">
+                <div class="modal-content"></div>
+            </div>
+        </section>
     </main>
+    <script src="js/main.js"></script>
 </body>
-<script src="js"></script>
 </html>

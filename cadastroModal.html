@@ -1,32 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Diário de Bordo</title>
-</head>
-<body>
-    <header>
-        <h1>Registro</h1>
-    </header>
-    <main>
-        <section>
-            <form>
-                <div>
-                    <label for=""></label>
-                    <input type="date" name="" id="">
-                </div>
-                <div>
-                    <label for=""></label>
-                    <textarea name="" id=""></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Registrar">
-                    <input type="reset" value="Limpar">
-                </div>
-            </form>
-        </section>
-    </main>
-</body>
-</html>
+<span id="closeModal">&times;</span>
+<h2>Registro</h2>
+<form>
+    <div>
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+    </div>
+    <div>
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" required></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Registrar">
+        <input type="reset" value="Limpar">
+    </div>
+</form>

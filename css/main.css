@@ -110,3 +110,73 @@ footer {
     font-size: 0.9rem;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
+
+/* -------- Modal -------- */
+.modal {
+    display: none; /* começa escondido */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background: rgba(31, 42, 56, 0.95);
+    margin: 8% auto;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 6px 15px rgba(0, 255, 204, 0.3);
+    position: relative;
+    color: #fff;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Botão fechar (X) */
+.modal-content .close,
+#closeModal {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffcc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-content .close:hover,
+#closeModal:hover {
+    color: #fff;
+    text-shadow: 0 0 8px #00ffcc;
+}
+
+/* Inputs dentro do modal */
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    margin: 0.8rem 0;
+    padding: 0.7rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+.modal-content input[type="submit"],
+.modal-content input[type="reset"] {
+    width: auto;
+    margin-top: 1rem;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
